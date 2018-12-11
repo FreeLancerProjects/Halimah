@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e95007</color>
+    <color name="colorPrimaryDark">#e95007</color>
+    <color name="colorAccent">#e95007</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_sign_up_press">#efefef</color>
+    <color name="btn_details_press">#ed6828</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="btn_bg_color">#00a2e5</color>
+    <color name="btn_press_bg_color">#027fb3</color>
+
+    <color name="toolbar_start_color">#ea570b</color>
+    <color name="toolbar_center_color">#f1781c</color>
+    <color name="toolbar_end_color">#f9a333</color>
+    <color name="tab_sel_color">#e86e24</color>
+    <color name="tab_un_sel_color">#f7aa00</color>
+    <color name="choose_date">#84ee00</color>
+    <color name="text_color">#a3a3a3</color>
+    <color name="text_nursery_title">#fe0b1f</color>
+    <color name="nav_icon_color">#bc2706</color>
+    <color name="nav_text_color">#732000</color>
+    <color name="nav_unsel_item_start">#ff651a</color>
+    <color name="nav_unsel_item_center">#f55b10</color>
+    <color name="nav_unsel_item_end">#ee5409</color>
+
+    <color name="nav_item_unsel_start_color">#043543</color>
+    <color name="nav_item_unsel_center_color">#022936</color>
+    <color name="nav_item_unsel_end_color">#011f2b</color>
+
+    <color name="gray0">#f5f5f5</color>
+    <color name="gray1">#eeeeee</color>
+    <color name="gray2">#bdbdbd</color>
+
+    <color name="prof_card_color_trans">#f0f9fc</color>
+    <color name="slider_image_color">#33f1781c</color>
+
+
+</resources>

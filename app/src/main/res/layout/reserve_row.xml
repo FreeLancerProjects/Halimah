@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    tools:ignore="RtlCompat">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/reserve_row_bg"
+        android:layout_marginStart="10dp"
+
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:singleLine="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="@string/reservation_from_hour"
+                />
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginStart="10dp"
+                tools:ignore="RtlCompat"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="-"
+
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="@string/reservation_to_hour"
+                />
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginStart="10dp"
+                tools:ignore="RtlCompat"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete_icon"
+        android:padding="3dp"
+
+        />
+</FrameLayout>

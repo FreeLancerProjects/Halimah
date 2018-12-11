@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="270"
+                android:startColor="@color/nav_unsel_item_start"
+                android:centerColor="@color/nav_unsel_item_center"
+                android:endColor="@color/nav_unsel_item_end"
+                />
+        </shape>
+    </item>
+
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="270"
+                android:startColor="@color/nav_item_unsel_start_color"
+                android:centerColor="@color/nav_item_unsel_center_color"
+                android:endColor="@color/nav_item_unsel_end_color"
+                />
+        </shape>
+    </item>
+</selector>

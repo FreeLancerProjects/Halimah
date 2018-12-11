@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        >
+        <FrameLayout
+            android:id="@+id/fl_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                app:civ_fill_color="@color/white"
+                android:src="@drawable/user_profile"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add_photo_icon"
+                android:layout_gravity="bottom"
+                android:padding="5dp"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_nursery_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/nursery_name"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/phone_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_nursery_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/nursery_phone"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_nursery_officer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/nursery_officer_name"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/phone_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_nursery_officer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/nursery_officer_phone"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/map_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/address"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/map_icon"
+                android:padding="8dp"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/address"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/clock2"
+                android:padding="8dp"
+                android:background="@drawable/edt_sign_bg"
+                android:layout_marginEnd="3dp"
+                tools:ignore="RtlCompat"
+
+                />
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:hint="@string/reservation_from_hour"
+                android:gravity="center"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginEnd="3dp"
+                tools:ignore="RtlCompat"
+                android:background="@drawable/edt_sign_bg"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:hint="@string/reservation_to_hour"
+                android:gravity="center"
+                android:textColorHint="@color/text_color"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"
+                tools:ignore="RtlCompat"
+                android:background="@drawable/edt_sign_bg"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/clock2"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_hour_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hour_cost"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="false"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/username"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edt_sign_bg"
+
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/password_icon"
+                android:padding="8dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:hintAnimationEnabled="false"
+                app:counterEnabled="false"
+                app:errorEnabled="false"
+
+
+                >
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_sign_bg"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/text_color"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:id="@+id/ll_choose_service"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+
+                android:background="@drawable/ch_service_bg"
+
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/down_arrow"
+                    android:padding="15dp"
+                    android:background="@color/transparent"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:hint="@string/choose_services"
+                    android:clickable="false"
+                    android:longClickable="false"
+
+
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <FrameLayout
+                    android:id="@+id/fl_choose_icon"
+                    android:layout_width="37dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="RtlCompat"
+                    android:background="@drawable/ch_service_icon_bg"
+                    android:visibility="invisible"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:padding="8dp"
+                        android:src="@drawable/orange_down_arrow"
+                        />
+                </FrameLayout>
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expand_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:el_duration="1500"
+                    app:el_parallax=".5"
+                    app:el_expanded="false"
+                    tools:ignore="RtlCompat"
+                    android:minHeight="270dp"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_sign_bg"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/colorPrimary"
+                android:visibility="gone"
+                />
+
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/sign_up"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@drawable/home_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/prof_card_color_trans"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/tv_prof"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="60dp"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="5dp"
+                                tools:ignore="RtlCompat">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".6"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="12sp"
+                                    android:text="@string/name"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1.4"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1"
+                                    android:background="@drawable/edt_sign_bg"
+
+                                    >
+                                    <TextView
+                                        android:id="@+id/tv_name"
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".85"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="13sp"
+                                        android:enabled="false"
+                                        tools:ignore="NestedWeights"
+
+                                        />
+                                    <ImageView
+                                        android:id="@+id/img_update_name"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_weight=".15"
+                                        android:src="@drawable/edit"
+                                        android:padding="8dp"
+                                        />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="5dp"
+                                tools:ignore="RtlCompat">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".6"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="12sp"
+                                    android:text="@string/phone"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1.4"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1"
+                                    android:background="@drawable/edt_sign_bg"
+
+                                    >
+                                    <TextView
+                                        android:id="@+id/tv_phone"
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".85"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="13sp"
+
+                                        tools:ignore="NestedWeights" />
+                                    <ImageView
+                                        android:id="@+id/img_update_phone"
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_weight=".15"
+                                        android:src="@drawable/edit"
+                                        android:padding="8dp"
+                                        />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="5dp"
+                                tools:ignore="RtlCompat">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight=".6"
+                                    android:gravity="center"
+                                    android:text="@string/username"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="12sp" />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1.4"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1"
+                                    android:background="@drawable/edt_sign_bg"
+
+                                    >
+                                    <TextView
+                                        android:id="@+id/tv_username"
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".85"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="13sp"
+
+                                        tools:ignore="NestedWeights" />
+
+                                    <ImageView
+                                        android:id="@+id/img_update_username"
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_weight=".15"
+                                        android:src="@drawable/edit"
+                                        android:padding="8dp"
+                                        tools:ignore="NestedWeights" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="25dp"
+                                tools:ignore="RtlCompat">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".6"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="12sp"
+                                    android:text="@string/password"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1.4"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1"
+                                    android:background="@drawable/edt_sign_bg"
+
+                                    >
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_weight=".85"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="13sp"
+                                        android:inputType="textPassword"
+                                        android:text="12311111"
+
+                                        tools:ignore="NestedWeights" />
+
+                                    <ImageView
+                                        android:id="@+id/img_update_password"
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_weight=".15"
+                                        android:src="@drawable/edit"
+                                        android:padding="8dp"
+                                        tools:ignore="NestedWeights" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/logo"
+                    app:civ_border_width="8dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    app:civ_fill_color="@color/white"
+
+
+                    />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>
